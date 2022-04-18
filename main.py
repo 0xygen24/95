@@ -1,7 +1,7 @@
 from guizero import App, TextBox, PushButton
 
 
-def e(winame: App) -> str:
+def e(winame: App) -> App:
     winame.destroy()
 
 
