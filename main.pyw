@@ -1,4 +1,6 @@
-from guizero import App, Text, PushButton, Window
+from guizero import App, Box, Text, PushButton, Window
+from tkinter import Spinbox
+from tkinter.ttk import Progressbar
 
 
 # Licensed under the Unlicense
@@ -19,12 +21,25 @@ def info1() -> None:
 
 
 def tiptoe() -> None:
-    """ I don't think you need to know what this does """
-    app.info("System Message", "TIPTOES.EXE has been successfully installed.")
+    """ I don't think you need to know what these do """
+    app.info("System Message", "TIPTOES.EXE has been successfully installed in the background.")
+    app.after(5000, startmenu)
     pass
 
 
-app = App(title="Don't look at this, it's not important.")
+def startmenu() -> None:
+    app.info("Did you know?", "The Start button is a quick and easy way to browse through files and programs. We will add a Finish button when we are done with you.")
+    app.after(5000, sleepmode)
+    pass
+
+
+def sleepmode() -> None:
+    app.info("Did you know?", "Sleep mode saves power while you are away, but Windows 95 never truly sleeps.")
+
+    pass
+
+
+app = App(title="Don't look at this, it's not important.", bg="black")
 app.hide()
 app.error("ERROR", "Windows 95 has failed to start in Safe Mode. It was a nice try, though. Windows 95 will now boot into Unsafe Mode…")
 app.info("Did you know?", "Some say Windows 95 is a mere graphical interface for MS-DOS.")
