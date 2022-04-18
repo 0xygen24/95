@@ -1,6 +1,4 @@
-from guizero import App, Box, Text, PushButton, Window
-from tkinter import Spinbox
-from tkinter.ttk import Progressbar
+from guizero import App
 
 
 # Licensed under the Unlicense
@@ -35,9 +33,9 @@ def startmenu() -> None:
 
 def sleepmode() -> None:
     app.info("Did you know?", "Sleep mode saves power while you are away, but Windows 95 never truly sleeps.")
-
+    app.after(5000, windows3)
     pass
-
+def windows3() -> None:
 
 app = App(title="Don't look at this, it's not important.", bg="black")
 app.hide()
