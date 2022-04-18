@@ -45,6 +45,12 @@ def windows3() -> None:
 
 def solitaire() -> None:
     app.info("Did you know?", "Victory at Solitaire grants you the classic bouncing card animation as well as a temporary reprieve from the pain.")
+    app.after(5000, skifree)
+    pass
+
+
+def skifree() -> None:
+    app.error("Error", "The program 'SkiFree.exe' is not permitted due to the perpetuation of such ridiculous concepts as 'outdoors' and 'freedom'. Why not try minesweeper?")
     app.after(5000, )
     pass
 
