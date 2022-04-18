@@ -1,7 +1,8 @@
+# Licensed under the Unlicense
 from guizero import App
 
 
-# Licensed under the Unlicense
+
 def e(winame: App) -> App:
     """ Closes windows """
     winame.destroy()
@@ -35,7 +36,19 @@ def sleepmode() -> None:
     app.info("Did you know?", "Sleep mode saves power while you are away, but Windows 95 never truly sleeps.")
     app.after(5000, windows3)
     pass
+
+
 def windows3() -> None:
+    app.info("Did you know?", "Windows 95 can run programs from Windows 3.x, but would feel a bit betrayed.")
+    app.after(5000, solitaire)
+    pass
+
+
+def solitaire() -> None:
+    app.info("Did you know?", "Victory at Solitaire grants you the classic bouncing card animation as well as a temporary reprieve from the pain.")
+    app.after(5000, )
+    pass
+
 
 app = App(title="Don't look at this, it's not important.", bg="black")
 app.hide()
