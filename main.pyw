@@ -2,7 +2,6 @@
 from guizero import App
 
 
-
 def e(winame: App) -> App:
     """ Closes windows """
     winame.destroy()
