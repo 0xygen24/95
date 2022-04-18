@@ -9,7 +9,6 @@ This app requires guizero
 ### Windows
 ```
 pip install guizero guizero[images]
-
 ```
 
 ### MacOS/Linux
