@@ -51,6 +51,10 @@ def solitaire() -> None:
 
 def skifree() -> None:
     app.error("Error", "The program 'SkiFree.exe' is not permitted due to the perpetuation of such ridiculous concepts as 'outdoors' and 'freedom'. Why not try minesweeper?")
+    app.after(5000, themoreyouknow)
+    pass
+def themoreyouknow():
+    app.info("Did you know...", "You may hide these welcome messages if you wish, but I doubt you will like the unwelcome messages any better.")
     app.after(5000, )
     pass
 
