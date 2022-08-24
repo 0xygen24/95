@@ -2,18 +2,20 @@
 from guizero import App
 
 
-def e(winame: App) -> App:
+def e(winame) -> None:
     """ Closes windows """
     winame.destroy()
     pass
 
 # I finally figured out that I can make each function call the next so they
 # aren't all running concurrently
-
+# Adds a delay, you know
+# Creepypasta: https://creepypasta.fandom.com/wiki/Ninety_Five
 
 def info1() -> None:
     """ first info box """
     app.info("Did you know?", "Windows 95 allows for file names up to 255 characters long. You might not need that much space, but we do.")
+    app.info("Installing tiptoes...")
     app.after(7000, tiptoe)
     pass
 
@@ -23,7 +25,7 @@ def tiptoe() -> None:
     app.info("System Message", "TIPTOES.EXE has been successfully installed in the background.")
     app.after(5000, startmenu)
     pass
-
+# I just keep adding these for each box in the creepypasta
 
 def startmenu() -> None:
     app.info("Did you know?", "The Start button is a quick and easy way to browse through files and programs. We will add a Finish button when we are done with you.")
@@ -59,6 +61,14 @@ def themoreyouknow() -> None:
     pass
 def winmem() -> None:
     app.info("Did you know...", "Windows 95 has a vastly improved capacity for memory. Unfortunately, Windows 95 also has a significantly decreased capacity for forgiveness.")
+    app.after(5000, cold)
+    pass
+def cold() -> None:
+    app.info("Cold", "Placing your hand against the side of the tower helps Windows 95 stay warm through the cold, harsh winter.")
+    app.after(5000, connection)
+    pass
+def connection() -> None:
+    app.info("System Message", "Now attempting to connect to the internet...")
     app.after(5000, )
     pass
 
