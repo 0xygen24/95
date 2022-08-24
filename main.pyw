@@ -53,8 +53,12 @@ def skifree() -> None:
     app.error("Error", "The program 'SkiFree.exe' is not permitted due to the perpetuation of such ridiculous concepts as 'outdoors' and 'freedom'. Why not try minesweeper?")
     app.after(5000, themoreyouknow)
     pass
-def themoreyouknow():
+def themoreyouknow() -> None:
     app.info("Did you know...", "You may hide these welcome messages if you wish, but I doubt you will like the unwelcome messages any better.")
+    app.after(5000, winmem)
+    pass
+def winmem() -> None:
+    app.info("Did you know...", "Windows 95 has a vastly improved capacity for memory. Unfortunately, Windows 95 also has a significantly decreased capacity for forgiveness.")
     app.after(5000, )
     pass
 
